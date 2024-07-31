@@ -6,13 +6,54 @@
     <title>Meal Planner - Dashboard</title>
     <script type="module" src="./js/main.js"></script>
   </head>
+  
   <body class="d-flex flex-column h-100">
-    <main>
+    <main>  
       <div class="container">
-        <h1>Here is some content!</h1>
+
+        <!-- TITLE BLOCK -->
+        <div class="m-5 text-center">
+          <h1>THIS WEEK'S PLAN</h1>
+        </div>
+
+        <!-- RECIPES SUMMARY -->
+        <div class="container py-2 bg-secondary rounded">
+          <!-- RECIPE 1 -->
+          <div class="row border-bottom p-3 align-items-center">
+            <div class="col-3 rounded bg-primary">
+              <div style="aspect-ratio: 1; max-height: 150px;" class="bg-primary"></div>
+            </div>
+            <div class="col-9 text-center">
+              <h3>RECIPE 1</h3>
+              <p class="text-body-secondary">400 Calories | 25 g Protein</p>
+            </div>
+          </div>
+          <!-- RECIPE 2 -->
+          <div class="row border-bottom p-3 align-items-center">
+            <div class="col-3 rounded bg-primary">
+              <div style="aspect-ratio: 1; max-height: 150px;" class="bg-primary"></div>
+            </div>
+            <div class="col-9 text-center">
+              <h3>RECIPE 2</h3>
+              <p class="text-body-secondary">400 Calories | 25 g Protein</p>
+            </div>
+          </div>
+          <!-- RECIPE 3 -->
+          <div class="row p-3 align-items-center">
+            <div class="col-3 rounded bg-primary">
+              <div style="aspect-ratio: 1; max-height: 150px;" class="bg-primary"></div>
+            </div>
+            <div class="col-9 text-center">
+              <h3>RECIPE 3</h3>
+              <p class="text-body-secondary">400 Calories | 25 g Protein</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </main>
     
+    <!-- STICKY NAV FOOTER -->
     <footer class="footer mt-auto">
       <div class="px-3 py-2 text-bg-dark bg-primary border-bottom">
         <div class="container">
@@ -23,18 +64,21 @@
               class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small"
             >
               <li>
+                <!-- DASHBOARD -->
                 <a href="#" class="nav-link text-white">
                   <i class="bi bi-speedometer2 d-block text-center fs-3"></i>
                   Dashboard
                 </a>
               </li>
               <li>
+                <!-- MEAL PLANS -->
                 <a href="#" class="nav-link text-white">
                   <i class="bi bi-calendar-minus-fill d-block text-center fs-3"></i>                  
                   Meal Plans
                 </a>
               </li>
               <li>
+                <!-- RECIPES -->
                 <a href="#" class="nav-link text-white">
                   <i class="bi bi-egg-fried d-block text-center fs-3"></i>
                   Recipes
