@@ -1,85 +1,45 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark" class="h-100">
+<html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Meal Planner - Dashboard</title>
     <script type="module" src="./js/main.js"></script>
   </head>
-  
-  <body class="d-flex flex-column h-100">
-    <main>  
-      <div class="container">
 
-        <!-- TITLE BLOCK -->
-        <div class="m-5 text-center">
-          <h1>THIS WEEK'S PLAN</h1>
-        </div>
-
-        <!-- RECIPES SUMMARY -->
-        <div class="container py-2 bg-secondary rounded">
-          <!-- RECIPE 1 -->
-          <div class="row border-bottom p-3 align-items-center">
-            <div class="col-3 rounded bg-primary">
-              <div style="aspect-ratio: 1; max-height: 150px;" class="bg-primary"></div>
-            </div>
-            <div class="col-9 text-center">
-              <h3>RECIPE 1</h3>
-              <p class="text-body-secondary">400 Calories | 25 g Protein</p>
-            </div>
-          </div>
-          <!-- RECIPE 2 -->
-          <div class="row border-bottom p-3 align-items-center">
-            <div class="col-3 rounded bg-primary">
-              <div style="aspect-ratio: 1; max-height: 150px;" class="bg-primary"></div>
-            </div>
-            <div class="col-9 text-center">
-              <h3>RECIPE 2</h3>
-              <p class="text-body-secondary">400 Calories | 25 g Protein</p>
-            </div>
-          </div>
-          <!-- RECIPE 3 -->
-          <div class="row p-3 align-items-center">
-            <div class="col-3 rounded bg-primary">
-              <div style="aspect-ratio: 1; max-height: 150px;" class="bg-primary"></div>
-            </div>
-            <div class="col-9 text-center">
-              <h3>RECIPE 3</h3>
-              <p class="text-body-secondary">400 Calories | 25 g Protein</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </main>
-    
-    <!-- STICKY NAV FOOTER -->
-    <footer class="footer mt-auto">
+  <body>
+    <!-- NAV HEADER -->
+    <header>
       <div class="px-3 py-2 text-bg-dark bg-primary border-bottom">
         <div class="container">
           <div
-            class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-end"
           >
+            <div class="d-none d-lg-block me-auto">
+              <h1>MealPlanner</h1>
+            </div>
             <ul
               class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small"
             >
               <li>
                 <!-- DASHBOARD -->
-                <a href="#" class="nav-link text-white">
+                <a href="/index.html" class="nav-link text-white border-bottom border-light border-3">
                   <i class="bi bi-speedometer2 d-block text-center fs-3"></i>
                   Dashboard
                 </a>
               </li>
               <li>
                 <!-- MEAL PLANS -->
-                <a href="#" class="nav-link text-white">
-                  <i class="bi bi-calendar-minus-fill d-block text-center fs-3"></i>                  
+                <a href="/mealPlans.html" class="nav-link text-white">
+                  <i
+                    class="bi bi-calendar-minus-fill d-block text-center fs-3"
+                  ></i>
                   Meal Plans
                 </a>
               </li>
               <li>
                 <!-- RECIPES -->
-                <a href="#" class="nav-link text-white">
+                <a href="/recipes.html" class="nav-link text-white">
                   <i class="bi bi-egg-fried d-block text-center fs-3"></i>
                   Recipes
                 </a>
@@ -88,6 +48,54 @@
           </div>
         </div>
       </div>
-    </footer>
+    </header>
+
+    <main>
+      <div class="container">
+        <!-- TITLE BLOCK -->
+        <div class="container p-3">
+          <h1>THIS WEEK'S PLAN</h1>
+        </div>
+
+        <!-- RECIPES SUMMARY -->
+        <div class="container border py-2 rounded">
+          <!-- RECIPE 1 -->
+          <div class="row p-3 align-items-center">
+            <h3>RECIPE 1</h3>
+            <p class="text-body-secondary">400 Calories | 25 g Protein</p>
+          </div>
+          <!-- RECIPE 2 -->
+          <div class="row p-3 align-items-center">
+            <h3>RECIPE 2</h3>
+            <p class="text-body-secondary">400 Calories | 25 g Protein</p>
+          </div>
+          <!-- RECIPE 3 -->
+          <div class="row p-3 align-items-center">
+            <h3>RECIPE 3</h3>
+            <p class="text-body-secondary">400 Calories | 25 g Protein</p>
+          </div>
+        </div>
+
+        <!-- MACROS -->
+        <div class="container mt-4 text-center">
+          <div class="row">
+            <!-- CALORIES -->
+            <div class="col-6">
+              <div style="height: 150px" class="bg-primary rounded p-2 d-flex flex-column justify-content-center">
+                <div class="fs-2 fw-bold">2500</div>
+                <div class="fs-3">DAILY CALORIES</div>
+              </div>
+            </div>
+            <!-- PROTEIN -->
+            <div class="col-6">
+              <div style="height: 150px" class="bg-primary rounded p-2 d-flex flex-column justify-content-center">
+                <div class="fs-2 fw-bold">150g</div>
+                <div class="fs-3">DAILY PROTEIN</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

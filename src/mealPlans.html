@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Meal Planner - Meal Plans</title>
+    <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+    <!-- NAV HEADER -->
+    <header>
+        <div class="px-3 py-2 text-bg-dark bg-primary border-bottom">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-end">
+                    <div class="d-none d-lg-block me-auto">
+                        <h1>MealPlanner</h1>
+                    </div>
+                    <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                        <li>
+                            <!-- DASHBOARD -->
+                            <a href="/index.html" class="nav-link text-white">
+                                <i class="bi bi-speedometer2 d-block text-center fs-3"></i>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <!-- MEAL PLANS -->
+                            <a href="/mealPlans.html" class="nav-link text-white border-bottom border-light border-3">
+                                <i class="bi bi-calendar-minus-fill d-block text-center fs-3"></i>
+                                Meal Plans
+                            </a>
+                        </li>
+                        <li>
+                            <!-- RECIPES -->
+                            <a href="/recipes.html" class="nav-link text-white">
+                                <i class="bi bi-egg-fried d-block text-center fs-3"></i>
+                                Recipes
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- TITLE BLOCK -->
+        <div class="container my-3">
+            <div class="row align-items-center">
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <h1>MEAL PLANS</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col">
+                            <button class="btn btn-primary">Add</button>
+                        </div>
+                        <div class="col-lg-9 col">
+                            <a data-bs-toggle="collapse" href="#collapseExample">
+                                Filter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <form method="get" class="d-flex">
+                        <input type="text" class="form-control me-2" />
+                        <input type="submit" value="Search" class="btn btn-primary"></input>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- COLLAPSIBLE FILTER SECTION -->
+        <div class="collapse" id="collapseExample">
+            <div class="container">
+                <div class="card card-body">
+                    FILTER FORM OPTIONS WILL BE ADDED HERE
+                </div>
+            </div>
+        </div>
+
+        <!-- MEAL PLANS TABLE -->
+        <!-- <div class="container mt-3">
+            <table class="table">
+                <thead class="table-light">
+                    <tr>
+                        <th>Title</th>
+                        <th>Recipes</th>
+                        <th>Calories</th>
+                        <th>Macros</th>
+                        <th>Tags</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Meatball Bulk</td>
+                        <td>Protein Oats, Chicken Wings, Meatball Sub</td>
+                        <td>2500</td>
+                        <td>
+                            <table class="table mb-0">
+                                <thead>
+                                    <tr>
+                                        <th>P</th>
+                                        <th>C</th>
+                                        <th>F</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>150</td>
+                                        <td>300</td>
+                                        <td>80</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <div class="badge rounded-pill text-bg-primary">
+                                Bulking
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> -->
+
+        <!-- MEAL PLANS CARDS -->
+        <div class="container mt-3">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title">Meatball Bulk</h5>
+                    <div class="card-subtitle text-secondary">2500 calories</div>
+                </div>
+                <div class="card-body">
+                    <h5>Recipes</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item">Protein Oats</li>
+                        <li class="list-group-item">Chicken Wings</li>
+                        <li class="list-group-item">Meatball Sub</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="card-footer text-body-secondary">
+                    2 days ago
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
